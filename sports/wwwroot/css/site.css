@@ -1,0 +1,259 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.bg {
+    background: radial-gradient(#fff,#df9a9a);
+    height: 100vh;
+    width: 100%;
+}
+
+.baner {
+    width: 85%;
+    margin: auto;
+    height: 85vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.navbar ul {
+    display: flex;
+    text-transform: uppercase;
+}
+
+    .navbar ul li {
+        list-style: none;
+        margin: 0px 12px;
+    }
+
+        .navbar ul li a {
+            text-decoration: none;
+            font-weight: 200;
+            color: black;
+        }
+
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    height: 85%;
+    align-items: center;
+}
+
+.box p {
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.btn {
+    margin: 12px 0;
+    background-color: rgb(240, 139, 173);
+    border: 2px;
+    padding: 2px 7px;
+    border-radius: 125px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+    .btn:hover {
+        background-color: brown;
+    }
+
+.row {
+    display: flex;
+    max-width: 620px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+    .row .colam img {
+        width: 100%;
+    }
+
+.colam {
+    width: 100%;
+    padding: 9px;
+    transition: 0.7s;
+}
+
+.tital {
+    text-align: center;
+    margin: 25px auto 45px;
+    position: relative;
+}
+
+.colam p {
+    font-size: 0.5rem;
+}
+
+.colam:hover {
+    transform: translateY(-4px)
+}
+
+.tital::after {
+    content: "";
+    width: 125px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    background-color: blue;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+h6 {
+    font: 0.7rem sans-serif;
+    color: #1a1919;
+}
+
+.offer {
+    background: radial-gradient(#fff,#df9a9a);
+    margin-top: 80px;
+    padding: 40px 0px;
+}
+
+.colam2 p {
+    font-size: 0.6rem;
+}
+
+.colam2 h2 {
+    margin: 8px 0;
+}
+
+.clint {
+    height: 40vh;
+}
+
+    .clint .row {
+        height: 40vh;
+    }
+
+@media screen and (max-width:700px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .bg {
+        height: 429px;
+    }
+
+    .baner {
+        height: 400px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    h6 {
+        font-size: 24px;
+    }
+
+    .colam p {
+        font-size: 19px;
+    }
+
+    .colam {
+        padding: 40px;
+        margin: 9px 18px;
+    }
+
+    .home {
+        flex-direction: column;
+        margin: 26px 0px;
+        justify-content: center;
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #282828;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+    .footer-column h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #444;
+        padding-bottom: 10px;
+    }
+
+    .footer-column p,
+    .footer-column ul {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+            .footer-column ul li a {
+                color: #bbb;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+                .footer-column ul li a:hover {
+                    color: #fff;
+                }
+
+.social-icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+    .social-icons li {
+        margin-right: 15px;
+    }
+
+        .social-icons li a img {
+            width: 24px;
+            height: 24px;
+            filter: invert(1);
+            transition: filter 0.3s;
+        }
+
+            .social-icons li a img:hover {
+                filter: invert(0.7);
+            }
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+}
+
+    .footer-bottom p {
+        color: white;
+        margin: 0;
+        font-size: 1em;
+    }
